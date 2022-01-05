@@ -1,0 +1,11 @@
+answer = ["A", "B", "C", "D", "A","A", "B", "B", "C", "D"]
+response = input()
+right_answer = 0
+length_answer = len(answer)
+if length_answer != len(response):
+    print("Please provide us with correct number of answers")
+else:
+    for right_answer in range(length_answer):
+        if answer[right_answer] == response[right_answer]:
+            right_answer += 1
+    print(f"You have corrected {right_answer} answer out of {length_answer}")
